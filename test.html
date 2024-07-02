@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css/all.min.css">
+  <link rel="stylesheet" href="style.css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css/style.css">
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="header text-center fw-bolder my-5 bg-warning-subtle py-5 rounded-4 text-light-emphasis text-decoration-underline fs-1">welcome to phone store</div>
+    <div class="mb-3">
+      <label for="code" class="form-label">name :</label>
+      <input list="aa" type="text" class="form-control   border-0 border-bottom " id="code">
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Description :</label>
+      <input type="text" list="bb" class="form-control   border-0 border-bottom " id="age">
+    </div>
+    <div class="mb-3">
+      <label for="adrees" class="form-label">price :</label>
+      <input type="text" class="form-control   border-0 border-bottom " id="adrees">
+    </div>
+    <div class="mb-3">
+      <label for="job" class="form-label ">imge :</label>
+      <input type="file" class="form-control   border-0 border-bottom " id="job">
+    </div>
+    <datalist id="bb">
+      <option value="good">
+      <option value="average">
+      <option value="bad">
+    
+    </datalist>
+    <datalist id="aa">
+      <option value="Sumsung">
+      <option value="Nokia">
+      <option value="Lenovo">
+      <option value="Apple">
+      <option value="Oppo">
+    </datalist>
+    <button id="addproduct" onclick="jobs();" type="submit" class="btn btn-primary px-4 d-block">add producat</button>
+    <button id="updateproduct" onclick="update();" type="submit" class="btn btn-info px-4 d-none">update
+      producat</button>
+      <input id="searchinput" oninput="search()" placeholder="search by name..." type="text" class="form-control my-5">
+    <div id="rowdata" class="row my-5">
+      <p></p>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
+
